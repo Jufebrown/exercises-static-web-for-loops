@@ -57,3 +57,22 @@ var presArray = [
 for (var i =  0; i  < presArray.length; i++) {
 	console.log(i+1 + " " + presArray[i]);
 }
+
+//object iteration
+var antSpecies = {
+  argentine: {},
+  army: {},
+  bigHeaded: {},
+  black: {},
+  bull: {},
+  carpenter: {},
+  crazy: {},
+  fire: {},
+  glider: {},
+  honeyPot: {},
+  jackJumper: {}
+}
+
+for (var prop in antSpecies) {
+  console.log(prop);
+}
