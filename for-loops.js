@@ -1,15 +1,18 @@
 //increment by 10
-for (var i = 5; i < 120; i+=10) {
+console.log('increment by 10')
+for (let i = 5; i < 120; i+=10) {
    console.log(i);
 }
 
 //decrement by division
-for (var i = 4096;; i/=2) {
+console.log('decrement by division')
+for (let i = 4096;; i/=2) {
 	console.log(i)
 	if (i === 1) {break};
 }
 
-var presArray = [
+//array of US presidents
+const presArray = [
 "George Washington",
 "John Adams",
 "Thomas Jefferson",
@@ -53,13 +56,25 @@ var presArray = [
 "George Herbert Walker Bush",
 "William Jefferson Clinton",
 "George Walker Bush",
-"Barack Hussein Obama"];
-for (var i =  0; i  < presArray.length; i++) {
-	console.log(i+1 + " " + presArray[i]);
-}
+"Barack Hussein Obama",
+"Donald Jackass Trump"
+];
+
+//loop over presidential array with for loop
+console.log('US Presidents')
+// for (let i =  0; i  < presArray.length; i++) {
+// 	console.log(i+1 + " " + presArray[i]);
+// }
+
+// loop over presArray with forEach
+let presCounter = 1
+presArray.forEach((each) => {
+  console.log(presCounter + '. ' + each)
+  presCounter++
+})
 
 //object iteration
-var antSpecies = {
+const antSpecies = {
   argentine: {},
   army: {},
   bigHeaded: {},
@@ -73,6 +88,8 @@ var antSpecies = {
   jackJumper: {}
 }
 
-for (var prop in antSpecies) {
+// for in loop over antSpecies
+console.log('ant species')
+for (let prop in antSpecies) {
   console.log(prop);
 }
